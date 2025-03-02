@@ -197,7 +197,8 @@ document
 // activity clear
 
 document.getElementById("clear-btn").addEventListener("click", function () {
-  document.getElementById("activity-clear").style.display = "none";
+  // document.getElementById("activity-clear").style.display = "none";
+  document.getElementById("activity-clear").innerHTML = " ";
 });
 
 // change color
@@ -209,5 +210,5 @@ document.getElementById("change-color").addEventListener("click", function () {
 });
 
 document.getElementById("next-page").addEventListener("click", function () {
-  window.location.href = "./../question.html";
+  window.location.href = "question.html";
 });
