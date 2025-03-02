@@ -1,5 +1,5 @@
 document.getElementById("complete-btn").addEventListener("click", function () {
-  alert("task completed");
+  alert("Board Updated Successfully");
   document.getElementById("complete-btn").disabled = true;
   const task = document.getElementById("task").innerText;
   const newTask = task - 1;
@@ -14,10 +14,15 @@ document.getElementById("complete-btn").addEventListener("click", function () {
   const time = now.toLocaleTimeString();
   const addActivity = document.getElementById("activity-clear");
   const activityElement = document.createElement("p");
+  activityElement.classList.add("bg-white");
+  activityElement.classList.add("p-4");
+  activityElement.classList.add("rounded-xl");
+  activityElement.classList.add("text-xl");
+  activityElement.classList.add("mb-4");
   activityElement.innerText = `You Have Completed Task ${taskTitle} at ${time}`;
   addActivity.appendChild(activityElement);
   if (newTask === 0) {
-    alert("no available task");
+    alert("All Task Completed");
   } else {
     console.log("ok");
   }
@@ -27,7 +32,7 @@ document.getElementById("complete-btn").addEventListener("click", function () {
 document
   .getElementById("complete-btn-2")
   .addEventListener("click", function () {
-    alert("task completed");
+    alert("Board Updated Successfully");
     document.getElementById("complete-btn-2").disabled = true;
     const task = document.getElementById("task").innerText;
     const newTask = task - 1;
@@ -42,10 +47,15 @@ document
     const time = now.toLocaleTimeString();
     const addActivity = document.getElementById("activity-clear");
     const activityElement = document.createElement("p");
+    activityElement.classList.add("bg-white");
+    activityElement.classList.add("p-4");
+    activityElement.classList.add("rounded-xl");
+    activityElement.classList.add("text-xl");
+    activityElement.classList.add("mb-4");
     activityElement.innerText = `You Have Completed Task ${taskTitle} at ${time}`;
     addActivity.appendChild(activityElement);
     if (newTask === 0) {
-      alert("no available task");
+      alert("All Task Completed");
     } else {
       console.log("ok");
     }
@@ -55,7 +65,7 @@ document
 document
   .getElementById("complete-btn-3")
   .addEventListener("click", function () {
-    alert("task completed");
+    alert("Board Updated Successfully");
     document.getElementById("complete-btn-3").disabled = true;
     const task = document.getElementById("task").innerText;
     const newTask = task - 1;
@@ -70,10 +80,15 @@ document
     const time = now.toLocaleTimeString();
     const addActivity = document.getElementById("activity-clear");
     const activityElement = document.createElement("p");
+    activityElement.classList.add("bg-white");
+    activityElement.classList.add("p-4");
+    activityElement.classList.add("rounded-xl");
+    activityElement.classList.add("text-xl");
+    activityElement.classList.add("mb-4");
     activityElement.innerText = `You Have Completed Task ${taskTitle} at ${time}`;
     addActivity.appendChild(activityElement);
     if (newTask === 0) {
-      alert("no available task");
+      alert("All Task Completed");
     } else {
       console.log("ok");
     }
@@ -83,7 +98,7 @@ document
 document
   .getElementById("complete-btn-4")
   .addEventListener("click", function () {
-    alert("task completed");
+    alert("Board Updated Successfully");
     document.getElementById("complete-btn-4").disabled = true;
     const task = document.getElementById("task").innerText;
     const newTask = task - 1;
@@ -98,10 +113,15 @@ document
     const time = now.toLocaleTimeString();
     const addActivity = document.getElementById("activity-clear");
     const activityElement = document.createElement("p");
+    activityElement.classList.add("bg-white");
+    activityElement.classList.add("p-4");
+    activityElement.classList.add("rounded-xl");
+    activityElement.classList.add("text-xl");
+    activityElement.classList.add("mb-4");
     activityElement.innerText = `You Have Completed Task ${taskTitle} at ${time}`;
     addActivity.appendChild(activityElement);
     if (newTask === 0) {
-      alert("no available task");
+      alert("All Task Completed");
     } else {
       console.log("ok");
     }
@@ -111,7 +131,7 @@ document
 document
   .getElementById("complete-btn-5")
   .addEventListener("click", function () {
-    alert("task completed");
+    alert("Board Updated Successfully");
     document.getElementById("complete-btn-5").disabled = true;
     const task = document.getElementById("task").innerText;
     const newTask = task - 1;
@@ -126,10 +146,15 @@ document
     const time = now.toLocaleTimeString();
     const addActivity = document.getElementById("activity-clear");
     const activityElement = document.createElement("p");
+    activityElement.classList.add("bg-white");
+    activityElement.classList.add("p-4");
+    activityElement.classList.add("rounded-xl");
+    activityElement.classList.add("text-xl");
+    activityElement.classList.add("mb-4");
     activityElement.innerText = `You Have Completed Task ${taskTitle} at ${time}`;
     addActivity.appendChild(activityElement);
     if (newTask === 0) {
-      alert("no available task");
+      alert("All Task Completed");
     } else {
       console.log("ok");
     }
@@ -139,7 +164,7 @@ document
 document
   .getElementById("complete-btn-6")
   .addEventListener("click", function () {
-    alert("task completed");
+    alert("Board Updated Successfully");
     document.getElementById("complete-btn-6").disabled = true;
     const task = document.getElementById("task").innerText;
     const newTask = task - 1;
@@ -154,10 +179,16 @@ document
     const time = now.toLocaleTimeString();
     const addActivity = document.getElementById("activity-clear");
     const activityElement = document.createElement("p");
+    activityElement.classList.add("bg-white");
+    activityElement.classList.add("p-2");
+    activityElement.classList.add("rounded-xl");
+    activityElement.classList.add("text-xl");
+    activityElement.classList.add("mb-4");
+
     activityElement.innerText = `You Have Completed Task ${taskTitle} at ${time}`;
     addActivity.appendChild(activityElement);
     if (newTask === 0) {
-      alert("no available task");
+      alert("All Task Completed");
     } else {
       console.log("ok");
     }
@@ -175,4 +206,8 @@ const color = ["red", "blue", "yellow", "violter", "green"];
 document.getElementById("change-color").addEventListener("click", function () {
   const colorSet = parseInt(Math.random() * color.length);
   document.getElementById("body").style.backgroundColor = color[colorSet];
+});
+
+document.getElementById("next-page").addEventListener("click", function () {
+  window.location.href = "./../question.html";
 });
